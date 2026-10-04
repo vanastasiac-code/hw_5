@@ -13,12 +13,14 @@
   );
   --color-back-4: #232b58;
   --color-white: #fff;
+  --color-text-accent: #3845ff;
+  --color-red: rgb(255, 0, 0);
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-ul {
+:where(ul) {
   list-style: none;
 }
 
@@ -34,6 +36,10 @@ body {
   border-radius: 12px;
   background-color: var(--color-accent);
 }
+.header__list-item > a:hover,
+.header__list-item > a:focus {
+  color: var(--color-white);
+}
 
 .about {
   background-color: var(--color-back-1);
@@ -47,6 +53,13 @@ body {
   text-align: center;
   font-style: italic;
 }
+.about__title::first-letter{
+  font-size: 50px;
+  color: var(--color-text-accent);
+}
+.about p {
+  color: var(--color-text-accent);
+}
 
 .prefer {
   background-color: var(--color-back-2);
@@ -55,7 +68,16 @@ body {
   color: var(--color-title);
   font-style: italic;
 }
-.prefer__subtitle {
+.prefer__title::after{
+  content: "\2665";
+}
+.prefer__title + p,
+.prefer-film__list li:last-child{
+  font-weight: 700;
+}
+.prefer > h3,
+.hobby__title,
+.prefer-film__list li:first-child {
   font-style: italic;
 }
 .prefer-film__list {
@@ -75,10 +97,18 @@ dt {
 .hobby {
   background: var(--color-back-3);
 }
-.hobby__title {
-  font-style: italic;
-}
 
 .contact__address-link {
   border: 5px double var(--color-back-4);
 }
+.contact__address-link:hover,
+.contact__address-link:focus{
+  color: var(--color-red);
+}
+.contact__address-link::before{
+  content: "\2709";
+}
+.contact__address a:last-of-type::before{
+  content: " \260F ";
+} 
+/* Цей селектор має найбільшу специфічність (0, 2, 2) */
