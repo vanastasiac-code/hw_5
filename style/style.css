@@ -1,0 +1,84 @@
+:root {
+  --main-color-text: #00032d;
+  --color-title: #00054f;
+  --color-accent: #ffc5c5;
+  --color-back-main: #fff2e1;
+  --color-back-1: #ffd3d3;
+  --color-back-2: #d3ffd6;
+  --color-back-3: linear-gradient(
+    90deg,
+    rgba(128, 202, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(128, 202, 255, 1) 100%
+  );
+  --color-back-4: #232b58;
+  --color-white: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-back-main);
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-color-text);
+}
+
+.header__list-item {
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+  background-color: var(--color-accent);
+}
+
+.about {
+  background-color: var(--color-back-1);
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about__title {
+  color: var(--color-title);
+  text-align: center;
+  font-style: italic;
+}
+
+.prefer {
+  background-color: var(--color-back-2);
+}
+.prefer__title {
+  color: var(--color-title);
+  font-style: italic;
+}
+.prefer__subtitle {
+  font-style: italic;
+}
+.prefer-film__list {
+  list-style: circle;
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+.prefer-music__list {
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+dt {
+  background-color: var(--color-accent);
+  border-radius: 15px;
+}
+
+.hobby {
+  background: var(--color-back-3);
+}
+.hobby__title {
+  font-style: italic;
+}
+
+.contact__address-link {
+  border: 5px double var(--color-back-4);
+}
