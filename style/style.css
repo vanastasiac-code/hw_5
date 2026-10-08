@@ -15,6 +15,8 @@
   --color-white: #fff;
   --color-text-accent: #3845ff;
   --color-red: rgb(255, 0, 0);
+  --color-grey: #d2cfcfb2;
+  --color-black: #000;
 }
 a {
   text-decoration: none;
@@ -48,12 +50,12 @@ body {
   background-position: center;
   background-size: cover;
 }
-.about__title {
+.hero__title {
   color: var(--color-title);
   text-align: center;
   font-style: italic;
 }
-.about__title::first-letter{
+.about__title::first-letter {
   font-size: 50px;
   color: var(--color-text-accent);
 }
@@ -68,11 +70,11 @@ body {
   color: var(--color-title);
   font-style: italic;
 }
-.prefer__title::after{
-  content: "\2665";
+.prefer__title::after {
+  content: '\2665';
 }
 .prefer__title + p,
-.prefer-film__list li:last-child{
+.prefer-film__list li:last-child {
   font-weight: 700;
 }
 .prefer > h3,
@@ -102,13 +104,31 @@ dt {
   border: 5px double var(--color-back-4);
 }
 .contact__address-link:hover,
-.contact__address-link:focus{
+.contact__address-link:focus {
   color: var(--color-red);
 }
-.contact__address-link::before{
-  content: "\2709";
+.contact__address-link::before {
+  content: '\2709';
 }
-.contact__address a:last-of-type::before{
-  content: " \260F ";
-} 
 /* Цей селектор має найбільшу специфічність (0, 2, 2) */
+.contact__address a:last-of-type::before {
+  content: ' \260F ';
+}
+
+.register__form {
+  border: 2px dashed var(--color-text-accent);
+}
+.register__form label,
+.register__form legend {
+  color: var(--color-back-4);
+  font-weight: 600;
+}
+.register__form input:not(.option) {
+  background: var(--color-grey);
+  border: 1px solid var(--color-black);
+}
+.btn__form {
+  background: var(--color-accent);
+  color: var(--color-title);
+  font-weight: 600;
+}

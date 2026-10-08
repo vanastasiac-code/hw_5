@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
     <header class="header">
@@ -24,8 +24,8 @@
     </header>
     <main>
       <section id="registration">
-        <h1>Registration form about you</h1>
-        <form action="/submit-form" method="post">
+        <h1 class="hero__title">Registration form about you</h1>
+        <form action="/submit-form" method="post" class="register__form">
           <label for="name">Enter your name and surname:</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Enter your email:</label>
@@ -58,7 +58,7 @@
             <label for="singing">Singing</label>
             <input type="checkbox" name="hobby" id="singing" value="singing" />
             <label for="another">Your option</label>
-            <input type="text" name="hobby" id="another"/>
+            <input type="text" name="hobby" id="another" class="option" />
           </fieldset>
           <label>
             Choose your direction:
@@ -74,15 +74,19 @@
             name="qualities"
             placeholder="Describe your positive qualities"
           ></textarea>
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button type="submit" class="btn__form">Submit</button>
+          <button type="reset" class="btn__form">Reset</button>
         </form>
       </section>
     </main>
     <footer id="contact" class="contact">
       <address class="contact__address">
-        <a href="mailto:v.anastasia.c@gmail.com" class="contact__address-link">v.anastasia.c@gmail.com</a>
-        <a href="tel:+380664321592" class="contact__address-link">+38(066)432 15 92</a>
+        <a href="mailto:v.anastasia.c@gmail.com" class="contact__address-link"
+          >v.anastasia.c@gmail.com</a
+        >
+        <a href="tel:+380664321592" class="contact__address-link"
+          >+38(066)432 15 92</a
+        >
       </address>
     </footer>
   </body>
