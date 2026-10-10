@@ -17,6 +17,8 @@
   --color-red: rgb(255, 0, 0);
   --color-grey: #d2cfcfb2;
   --color-black: #000;
+  --color-green: rgb(0, 128, 0);
+  --color-orange: rgba(128, 38, 0, 0.68);
 }
 a {
   text-decoration: none;
@@ -133,27 +135,26 @@ dt {
   font-weight: 600;
 }
 
-
 .table__title {
-        font-style: italic;
-      }
-      .table-cell th,
-      .table-cell td {
-        border: 1px solid #000;
-        text-align: center;
-      }
-      .price table {
-        background-color: green;
-        border: 1px solid #000;
-        border-collapse: collapse;
-      }
-      .category table {
-        background-color: rgba(128, 38, 0, 0.68);
-        border: 1px solid #000;
-        border-collapse: collapse;
-      }
-      .results table {
-        background-color: rgba(0, 94, 128, 0.68);
-        border: 1px solid #000;
-        border-collapse: collapse;
-      }
+  font-style: italic;
+}
+.table-cell th,
+.table-cell td {
+  border: 1px solid var(--color-black);
+  text-align: center;
+}
+.price table {
+  background-color: var(--color-green);
+  border: 1px solid var(--color-black);
+  border-collapse: collapse;
+}
+.category table {
+  background-color: var(--color-orange);
+  border: 1px solid var(--color-black);
+  border-collapse: collapse;
+}
+.results table {
+  background-color: var(--color-back-1);
+  border: 1px solid var(--color-black);
+  border-collapse: collapse;
+}
