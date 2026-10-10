@@ -132,3 +132,28 @@ dt {
   color: var(--color-title);
   font-weight: 600;
 }
+
+
+.table__title {
+        font-style: italic;
+      }
+      .table-cell th,
+      .table-cell td {
+        border: 1px solid #000;
+        text-align: center;
+      }
+      .price table {
+        background-color: green;
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      .category table {
+        background-color: rgba(128, 38, 0, 0.68);
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      .results table {
+        background-color: rgba(0, 94, 128, 0.68);
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }

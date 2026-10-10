@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="../index.html" class="header__list-link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#contact" class="header__list-link">Contact</a>
+          </li>
+          <li class="header__list-item">
+            <a href="./registration.html" class="header__list-link">Registration</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#table" class="header__list__link">Tables</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="price" id="table">
+        <h2 class="table__title">Прайс-лист</h2>
+        <table class="table-cell">
+          <thead>
+            <tr>
+              <th>Назва товару</th>
+              <th>Категорія</th>
+              <th>Ціна</th>
+              <th>Кількість</th>
+              <th>Загальна вартість</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MacBook Air</td>
+              <td>Ноутбуки</td>
+              <td>50 000 грн</td>
+              <td>2</td>
+              <td>100 000 грн</td>
+            </tr>
+            <tr>
+              <td>iPhone 17</td>
+              <td>Смартфони</td>
+              <td>40 000 грн</td>
+              <td>3</td>
+              <td>120 000 грн</td>
+            </tr>
+            <tr>
+              <td>AirPods Pro</td>
+              <td>Навушники</td>
+              <td>10 000 грн</td>
+              <td>5</td>
+              <td>50 000 грн</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Разом</td>
+              <td>10</td>
+              <td>270 000 грн</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section class="category">
+        <h2 class="table__title">Категорія товарів</h2>
+        <table class="table-cell">
+          <thead>
+            <tr>
+              <th>Категорія</th>
+              <th>Товар</th>
+              <th>Кількість</th>
+              <th>Ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Ноутбуки</td>
+              <td>MacBook</td>
+              <td>5</td>
+              <td>50000</td>
+            </tr>
+            <tr>
+              <td>Lenovo</td>
+              <td>3</td>
+              <td>35000</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Телефони</td>
+              <td>iPhone</td>
+              <td>4</td>
+              <td>40000</td>
+            </tr>
+            <tr>
+              <td>Samsung</td>
+              <td>6</td>
+              <td>30000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="results">
+        <h2 class="table__title">Результати змагань</h2>
+        <table class="table-cell">
+          <thead>
+            <tr>
+              <th>Учасник</th>
+              <th colspan="3">Результати</th>
+              <th>Підсумок</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Ім'я</td>
+              <td colspan="2">Біг</td>
+              <td>Стрибки</td>
+              <td rowspan="2">Бали</td>
+            </tr>
+            <tr>
+              <td>100 м</td>
+              <td>400 м</td>
+              <td>Довжина</td>
+            </tr>
+            <tr>
+              <td>Анна</td>
+              <td>12.4 с</td>
+              <td>58.2 с</td>
+              <td>5.4 м</td>
+              <td>86</td>
+            </tr>
+            <tr>
+              <td>Олег</td>
+              <td>11.9 с</td>
+              <td>55.7 с</td>
+              <td>5.8 м</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td>Марія</td>
+              <td>12.8 с</td>
+              <td>60.1 с</td>
+              <td>5.2 м</td>
+              <td>81</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer id="contact" class="contact">
+      <address class="contact__address">
+        <a href="mailto:v.anastasia.c@gmail.com" class="contact__address-link"
+          >v.anastasia.c@gmail.com</a
+        >
+        <a href="tel:+380664321592" class="contact__address-link"
+          >+38(066)432 15 92</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>
