@@ -145,8 +145,11 @@ dt {
 .table-cell th {
   text-align: center;
 }
-.text-right {
-  text-align: right;
+.table-cell .border-bottom{
+  border-bottom: none;
+}
+.table-cell .border-top{
+  border-top: none;
 }
 .price table {
   background-color: var(--color-green);
