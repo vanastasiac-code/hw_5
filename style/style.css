@@ -141,7 +141,12 @@ dt {
 .table-cell th,
 .table-cell td {
   border: 1px solid var(--color-black);
+}
+.table-cell th {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .price table {
   background-color: var(--color-green);
