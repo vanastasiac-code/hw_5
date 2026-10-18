@@ -27,14 +27,38 @@ a {
 :where(ul) {
   list-style: none;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: var(--color-back-main);
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: var(--main-color-text);
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header{
+  padding-top: 7px;
+}
 .header__list-item {
   border: 1px solid var(--color-accent);
   border-radius: 12px;
@@ -51,11 +75,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 20px 0;
 }
 .hero__title {
   color: var(--color-title);
   text-align: center;
   font-style: italic;
+  padding-bottom: 10px;
 }
 .about__title::first-letter {
   font-size: 50px;
@@ -67,10 +93,12 @@ body {
 
 .prefer {
   background-color: var(--color-back-2);
+  padding: 20px 0;
 }
 .prefer__title {
   color: var(--color-title);
   font-style: italic;
+  padding-bottom: 10px;
 }
 .prefer__title::after {
   content: '\2665';
@@ -84,22 +112,40 @@ body {
 .prefer-film__list li:first-child {
   font-style: italic;
 }
+.prefer__subtitle{
+  padding: 10px;
+}
+.prefer__description{
+  margin-bottom: 10px;
+}
 .prefer-film__list {
   list-style: circle;
   background-color: var(--color-white);
   border-radius: 12px;
+  padding-left: 20px;
 }
 .prefer-music__list {
   background-color: var(--color-white);
   border-radius: 12px;
+
 }
-dt {
+.prefer-music__list dt {
   background-color: var(--color-accent);
   border-radius: 15px;
+}
+.prefer-music__list dd{
+  padding-left: 20px;
 }
 
 .hobby {
   background: var(--color-back-3);
+  padding: 20px 0;
+}
+.hobby__title{
+  margin-bottom: 10px;
+}
+.hobby__description:last-of-type{
+  margin-bottom: 15px;
 }
 
 .contact__address-link {
@@ -145,10 +191,10 @@ dt {
 .table-cell th {
   text-align: center;
 }
-.table-cell .border-bottom{
+.table-cell .border-bottom {
   border-bottom: none;
 }
-.table-cell .border-top{
+.table-cell .border-top {
   border-top: none;
 }
 .price table {
