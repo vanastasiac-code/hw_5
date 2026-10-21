@@ -64,6 +64,9 @@ body {
   border-radius: 12px;
   background-color: var(--color-accent);
 }
+.header__list-item:not(:last-child){
+  margin-bottom: 10px;
+}
 .header__list-item > a:hover,
 .header__list-item > a:focus {
   color: var(--color-white);
@@ -81,7 +84,7 @@ body {
   color: var(--color-title);
   text-align: center;
   font-style: italic;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .about__title::first-letter {
   font-size: 50px;
@@ -89,6 +92,7 @@ body {
 }
 .about p {
   color: var(--color-text-accent);
+  margin-bottom: 10px;
 }
 
 .prefer {
@@ -98,7 +102,7 @@ body {
 .prefer__title {
   color: var(--color-title);
   font-style: italic;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .prefer__title::after {
   content: '\2665';
@@ -113,7 +117,7 @@ body {
   font-style: italic;
 }
 .prefer__subtitle{
-  padding: 10px;
+  margin: 10px;
 }
 .prefer__description{
   margin-bottom: 10px;
@@ -123,6 +127,9 @@ body {
   background-color: var(--color-white);
   border-radius: 12px;
   padding-left: 20px;
+}
+.prefer-film__item:not(:last-child){
+  margin-bottom: 7px;
 }
 .prefer-music__list {
   background-color: var(--color-white);
@@ -144,12 +151,16 @@ body {
 .hobby__title{
   margin-bottom: 10px;
 }
-.hobby__description:last-of-type{
-  margin-bottom: 15px;
+.hobby__description{
+  margin-bottom: 10px;
 }
 
+.contact{
+  margin: 20px 0;
+}
 .contact__address-link {
   border: 5px double var(--color-back-4);
+  margin-right: 10px;
 }
 .contact__address-link:hover,
 .contact__address-link:focus {
