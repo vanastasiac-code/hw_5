@@ -162,6 +162,9 @@ body {
 .contact__address-link {
   border: 5px double var(--color-back-4);
 }
+.contact__address-link:not(:last-child){
+  margin-right: 10px;
+}
 .contact__address-link:hover,
 .contact__address-link:focus {
   color: var(--color-red);
