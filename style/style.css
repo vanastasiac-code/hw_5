@@ -61,6 +61,7 @@ body {
   padding-top: 7px;
   position: sticky;
   top: 0;
+  background-color: var(--color-back-main);
 }
 .header__list-item {
   border: 1px solid var(--color-accent);
@@ -143,7 +144,7 @@ body {
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 30%;
+  left: 315px;
   bottom: 0;
 }
 .prefer-music__list {
